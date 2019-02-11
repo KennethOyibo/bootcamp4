@@ -5,5 +5,5 @@ module.exports = {
   db: {
     uri: 'mongodb://KennethOyibo:ken1234@ds125481.mlab.com:25481/kenneth_database', //place the URI of your mongo database here.
   }, 
-  port: (8080 || process.env.PORT)
+  port: process.env.PORT || 8080
 };
