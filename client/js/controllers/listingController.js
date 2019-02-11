@@ -12,13 +12,13 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
   
     $scope.addListing = function() {
     $scope.listings.push($scope.newListing);
+    Listings.create($scope.newListing);
     $scope.newListing = {};
-    Listings.create(newListing);
     };
 
     $scope.deleteListing = function(index) {
       $scope.listings.splice(index,1);
-      Listings.delete(index);
+      Listings.delete(index,1);
     };
     
     $scope.showDetails = function(index) {
