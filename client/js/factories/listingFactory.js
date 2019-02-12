@@ -13,7 +13,7 @@ angular.module('listings', []).factory('Listings', function($http) {
         return result of HTTP delete method
        */
     //return $http.delete('https://warm-retreat-24285.herokuapp.com/api/listings/' + id);
-    return $http.delete('https://warm-retreat-24285.herokuapp.com/api/listings/', listing);
+    return $http.delete('https://warm-retreat-24285.herokuapp.com/api/listings/',id);
 
     }
   };
