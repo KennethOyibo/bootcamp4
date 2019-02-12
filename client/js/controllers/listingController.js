@@ -16,7 +16,7 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
     $scope.newListing = {};
     };
 
-    $scope.deleteListing = function(index) {
+    $scope.deleteListing = function(_index) {
       var indexOf = $scope.listings.indexOf(index);
       $scope.listings.splice(indexOf,1);
       Listings.delete(indexOf).then(function(response) {
