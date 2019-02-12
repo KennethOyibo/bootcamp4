@@ -8,12 +8,12 @@ angular.module('listings', []).factory('Listings', function($http) {
 	  return $http.post('https://warm-retreat-24285.herokuapp.com/api/listings/', listing);
     }, 
 
-    delete: function(_id) {
+    delete: function(index) {
 	   /**TODO
         return result of HTTP delete method
        */
     //return $http.delete('https://warm-retreat-24285.herokuapp.com/api/listings/' + id);
-    return $http.delete('https://warm-retreat-24285.herokuapp.com/api/listings/'+_id);
+    return $http.delete('https://warm-retreat-24285.herokuapp.com/api/listings/'+index);
 
     }
   };
